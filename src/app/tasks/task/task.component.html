@@ -1,0 +1,13 @@
+<div class="card bg-light mb-3" style="max-width: 20rem;">
+  <div class="card-header">{{task?.author}}
+
+    <img src="../../assets/images/heart.png" class="rounded float-right" alt="...">
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">{{task?.title}}</h4>
+    <p class="card-text">{{task?.body}}</p>
+    <button class="btn btn-success">Concluir</button>
+    <button class="btn btn-warning float-right">Editar</button>        
+  </div>
+  <div class="card-footer">{{task?.likes}} </div>
+</div>

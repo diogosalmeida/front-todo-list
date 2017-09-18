@@ -9,9 +9,7 @@ export class TaskService {
 
   endPoint: String = "http://localhost:4000"
 
-  constructor(private http: Http) {
-    
-  }
+  constructor(private http: Http) {}
 
   getTasks(): Observable<object[]> {
     return this.http.get(`${this.endPoint}/tasks`)
